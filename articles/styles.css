@@ -1,0 +1,180 @@
+/* Common Styles */
+body {
+    background-color: #1a1a1d;
+    font-family: 'Georgia', serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: left;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+}
+
+/* Add hover effects for headings */
+h1:hover, h2:hover {
+    color: #f0a500; /* Change color on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Footer styles */
+footer {
+    background-color: #222831;
+    color: #eeeeee;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f0a500;
+    color: #222831;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.1);
+}
+
+/* Theme Styles */
+.article-theme {
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+/* SEO Theme */
+.seo-theme {
+    background-color: #1e212d;
+    border: 1px solid #393e46;
+}
+
+.seo-theme h1 {
+    color: #f0a500;
+}
+
+.seo-theme h2 {
+    color: #ff5733;
+}
+
+/* Unknown Theme */
+.unknown-theme {
+    background-color: #2a2d3a;
+    border: 1px solid #3c4150;
+}
+
+.unknown-theme h1 {
+    color: #4db6ac;
+}
+
+.unknown-theme h2 {
+    color: #ff8a65;
+}
+
+/* Urban Theme */
+.urban-theme {
+    background-color: #2b2b2b;
+    border: 1px solid #414141;
+}
+
+.urban-theme h1 {
+    color: #ff9800;
+}
+
+.urban-theme h2 {
+    color: #9e9e9e;
+}
+
+/* Unique Article Animations */
+.seo-theme {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.unknown-theme {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.urban-theme {
+    animation: bounceIn 0.5s ease-in-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .scroll-to-top {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
